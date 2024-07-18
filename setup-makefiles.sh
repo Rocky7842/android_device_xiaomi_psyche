@@ -8,7 +8,7 @@
 
 set -e
 
-export DEVICE=umi
+export DEVICE=psyche
 export DEVICE_COMMON=sm8250-common
 export VENDOR=xiaomi
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2020 The LineageOS Project
+# Copyright (C) 2017-2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -10,6 +10,17 @@ function blob_fixup() {
     case "${1}" in
         vendor/etc/init/init.batterysecret.rc)
             sed -i "/seclabel u:r:batterysecret:s0/d" "${2}"
+            ;;
+        vendor/etc/libnfc-nci.conf)
+            grep -q "LEGACY_MIFARE_READER" "${2}" || cat << EOF >> "${2}"
+
+###############################################################################
+# Mifare Tag implementation
+# 0: General implementation
+# 1: Legacy implementation
+LEGACY_MIFARE_READER=1
+###############################################################################
+EOF
             ;;
         vendor/lib64/camera/components/com.mi.node.watermark.so)
             "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
@@ -28,7 +39,7 @@ fi
 
 set -e
 
-export DEVICE=umi
+export DEVICE=psyche
 export DEVICE_COMMON=sm8250-common
 export VENDOR=xiaomi
 
