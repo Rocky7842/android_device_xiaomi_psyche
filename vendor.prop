@@ -47,3 +47,8 @@ ro.surface_flinger.set_idle_timer_ms=2100
 ro.surface_flinger.set_touch_timer_ms=2100
 ro.surface_flinger.wcg_composition_dataspace=143261696
 ro.vendor.display.paneltype=2
+
+# Fingerprint
+persist.vendor.fingerprint.sensor_location=540|2163|102
+persist.vendor.fingerprint.type=udfps_optical
+persist.vendor.fingerprint.udfps.control_illumination=true
