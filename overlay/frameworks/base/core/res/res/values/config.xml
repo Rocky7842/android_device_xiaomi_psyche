@@ -456,18 +456,6 @@
     <!-- The default peak refresh rate. -->
     <integer name="config_defaultPeakRefreshRate">120</integer>
 
-    <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
-    <integer-array name="config_udfps_sensor_props" translatable="false" >
-      <!--
-        <item>sensorLocationX</item>
-        <item>sensorLocationY</item>
-        <item>sensorRadius</item>
-      -->
-        <item>540</item>
-        <item>2163</item>
-        <item>102</item>
-    </integer-array>
-
     <!-- How long it takes for the HW to start illpsychenating after the illpsychenation is requested. -->
     <integer name="config_udfps_illpsychenation_transition_ms">0</integer>
 
