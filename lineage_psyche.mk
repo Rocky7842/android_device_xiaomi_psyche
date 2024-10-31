@@ -23,6 +23,5 @@ PRODUCT_MODEL := 2112123AG
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="psyche_global-user 13 RKQ1.211001.001 V816.0.5.0.TLDMIXM release-keys"
-
-BUILD_FINGERPRINT := Xiaomi/psyche_global/psyche:13/RKQ1.211001.001/V816.0.5.0.TLDMIXM:user/release-keys
+    BuildDesc="psyche_global-user 13 RKQ1.211001.001 V816.0.5.0.TLDMIXM release-keys" \
+    BuildFingerprint=Xiaomi/psyche_global/psyche:13/RKQ1.211001.001/V816.0.5.0.TLDMIXM:user/release-keys
