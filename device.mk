@@ -33,6 +33,9 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     libpiex_shim
 
+# Caerma (MIUI)
+$(call inherit-product-if-exists, device/xiaomi/camera-psyche/miuicamera.mk)
+
 # Display
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,qdcm_calib_data_*.xml,$(LOCAL_PATH)/qdcm/,$(TARGET_COPY_OUT_VENDOR)/etc/)
