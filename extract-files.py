@@ -31,6 +31,8 @@ blob_fixups: blob_fixups_user_type = {
         ),
     'vendor/lib64/camera/components/com.mi.node.watermark.so': blob_fixup()
         .add_needed('libpiex_shim.so'),
+    'vendor/lib64/camera/components/com.vidhance.node.eis.so': blob_fixup()
+        .replace_needed('libui.so', 'libui-v34.so'),
     'vendor/lib64/hw/camera.qcom.so': blob_fixup()
         .binary_regex_replace(
             b'\x73\x74\x5F\x6C\x69\x63\x65\x6E\x73\x65\x2E\x6C\x69\x63',
