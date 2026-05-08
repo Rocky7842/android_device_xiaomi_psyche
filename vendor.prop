@@ -34,9 +34,6 @@ vendor.audio.feature.compr_voip.enable=false
 vendor.audio.offload.buffer.size.kb=32
 vendor.audio_hal.period_multiplier=3
 
-# Audio hardware
-ro.hardware.audio.primary=psyche
-
 # Display
 ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.has_wide_color_display=true
