@@ -9,6 +9,9 @@ include device/xiaomi/sm8250-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/psyche
 
+# Audio
+AUDIO_FEATURE_ELLIPTIC_ULTRASOUND_SUPPORT := true
+
 # Board
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
