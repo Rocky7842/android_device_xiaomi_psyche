@@ -1,4 +1,5 @@
 # Audio
+ro.hardware.audio_amplifier=cs35l41
 persist.vendor.audio.delta.refresh=true
 persist.vendor.audio.misound.disable=true
 ro.audio.monitorRotation=true
