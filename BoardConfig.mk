@@ -10,7 +10,6 @@ include device/xiaomi/sm8250-common/BoardConfigCommon.mk
 DEVICE_PATH := device/xiaomi/psyche
 
 # Audio
-AUDIO_FEATURE_ENABLED_CIRRUS_CALIBRATION_RESISTANCE := true
 AUDIO_FEATURE_ELLIPTIC_ULTRASOUND_SUPPORT := true
 
 # Board
