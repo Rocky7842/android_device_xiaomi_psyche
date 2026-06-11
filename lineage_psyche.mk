@@ -24,4 +24,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="psyche_global-user 13 TKQ1.221114.001 V816.0.8.0.TLDMIXM release-keys" \
-    BuildFingerprint=Xiaomi/psyche_global/psyche:13/TKQ1.221114.001/V816.0.8.0.TLDMIXM:user/release-keys
+    BuildFingerprint=Xiaomi/psyche_global/psyche:13/TKQ1.221114.001/V816.0.8.0.TLDMIXM:user/release-keys \
+    DeviceName=psyche \
+    DeviceProduct=psyche_global \
+    SystemName=psyche_global
