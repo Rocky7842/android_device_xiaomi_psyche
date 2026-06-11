@@ -26,6 +26,7 @@ TARGET_KERNEL_CONFIG += vendor/xiaomi/psyche.config
 TARGET_OTA_ASSERT_DEVICE := psyche
 
 # Properties
+TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Inherit from the proprietary version
