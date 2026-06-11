@@ -19,6 +19,9 @@ TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 # Display
 TARGET_SCREEN_DENSITY := 440
 
+# NFC
+BOARD_KERNEL_CMDLINE += androidboot.product.hardware.sku=nfc
+
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/xiaomi/psyche.config
 
